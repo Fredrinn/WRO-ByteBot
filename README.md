@@ -4,8 +4,8 @@ This repository contains all the documentation, source code, schematics, and res
 
 ## Team Members
 
-- Anthony Vargas 🚀
-- Yonathan González 🛠️
+- Anthony Vargas 🛠️
+- Yonathan González 👨‍💻
 - Miguelangel Moreno 📊
 
 🌟 Sponsored by **Rincón Clubhouse La Chorrera** 🇵🇦
@@ -26,8 +26,8 @@ Este repositorio contiene toda la documentación, código fuente, esquemas y rec
 
 ## Miembros del Equipo
 
-- Anthony Vargas 🚀
-- Yonathan González 🛠️
+- Anthony Vargas 🛠️
+- Yonathan González 👨‍💻
 - Miguelangel Moreno 📊
 
 🌟 Patrocinado por **Rincón Clubhouse La Chorrera** 🇵🇦
