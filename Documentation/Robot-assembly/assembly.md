@@ -4,11 +4,11 @@ Our robot has been assembled using components from various robotics kits, strate
 
 The combination of these kits enabled a modular and adaptable design, facilitating the incorporation of diverse electronic and mechanical components. We prioritized efficiency in arranging these elements, ensuring a coherent and functional interface among sensors, motors, and the central control system.
 
+<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20A.png" alt="Model A" width="400"><br>
 **Model A**
-<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20A.png" width="400">
 
+<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20B.jpg" alt="Model B" width="400"><br>
 **Model B**
-<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20B.jpg" width="400">
 
 The PDF files "Assemble Model A" and "Assemble Model B" detail the assembly of the final models. Components such as sensors have been custom-selected, allowing us to use equipment tailored to our specific needs. We chose not to use sensors and components provided in standard kits, such as programming boards and motors, opting instead for those we deemed more suitable for our technical requirements and project goals.
 
@@ -22,11 +22,11 @@ Nuestro robot ha sido ensamblado utilizando componentes provenientes de diferent
 
 La combinación de estos kits permitió un diseño modular y adaptable, facilitando la incorporación de diversos componentes electrónicos y mecánicos. Se priorizó la eficiencia en la disposición de los elementos, asegurando una interfaz coherente y funcional entre los sensores, motores y el sistema de control central.
 
+<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20A.png" alt="Model A" width="400"><br>
 **Modelo A**
-<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20A.png" width="400">
 
+<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20B.jpg" alt="Model B" width="400"><br>
 **Modelo B**
-<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20B.jpg" width="400">
 
 Los archivos PDF "Assemble Model A" y "Assemble Model B" detallan el ensamblaje de los modelos finales. Los componentes, como sensores, fueron seleccionados específicamente para adaptarse a nuestras necesidades. Decidimos no utilizar sensores y componentes proporcionados en kits estándar, como placas de programación y motores, optando en su lugar por aquellos que consideramos más adecuados para nuestros requisitos técnicos y objetivos del proyecto.
 
