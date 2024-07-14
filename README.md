@@ -1,6 +1,6 @@
 # ByteBots Team Repository for the Competition WRO 🤖
 
-This repository contains all the documentation, source code, schematics, and resources related to the robot developed by ByteBots team for the WRO competition.
+This repository contains all the documentation, source code, schematics, and resources related to the robot developed by the ByteBots team for the WRO competition, categorized as "Future Engineers".
 
 ## Team Members
 
@@ -22,7 +22,7 @@ Visit us on [Instagram](https://www.instagram.com/rclubhouselachorrera?utm_sourc
 
 # Repositorio del Equipo ByteBots para la Competencia WRO 🤖
 
-Este repositorio contiene toda la documentación, código fuente, esquemas y recursos relacionados con el robot desarrollado por el equipo ByteBots para la competencia WRO.
+Este repositorio contiene toda la documentación, código fuente, esquemas y recursos relacionados con el robot desarrollado por el equipo ByteBots para la competencia WRO, bajo la categoría de "Futuros ingenieros".
 
 ## Miembros del Equipo
 
