@@ -86,7 +86,7 @@ The camera module adds vision capabilities to the system, enabling the capture o
      - Alimentación desde baterías.
      - Sensores y actuadores conectados a varios pines.
 
-   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/Arduino-mega.jpg" alt="Arduino Mega" width="250"><br>
+   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/Arduino-mega.jpg" alt="Arduino Mega" width="250" style="border: 1px solid #ddd;"><br>
 
 2. **Módulo Driver de Motores L298N**:
    - Ubicado a la izquierda de la placa Arduino.
@@ -95,34 +95,34 @@ The camera module adds vision capabilities to the system, enabling the capture o
      - Alimentación y control desde Arduino.
      - Salidas a motor DC y servo.
 
-   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/l293d-arduino-motor-driver-shield.jpg" alt="L298N Motor Driver" width="250"><br>
+   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/l293d-arduino-motor-driver-shield.jpg" alt="L298N Motor Driver" width="250" style="border: 1px solid #ddd;"><br>
 
 3. **Baterías 18650**:
    - Dos baterías ubicadas a la izquierda, conectadas en serie para proporcionar alimentación.
    - Conexión al driver de motores y a la placa Arduino.
 
-   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/18650-battery-3000mah.jpg" alt="18650 Batteries" width="250"><br>
+   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/18650-battery-3000mah.jpg" alt="18650 Batteries" width="250" style="border: 1px solid #ddd;"><br>
 
 4. **Sensor Ultrasónico HC-SR04**:
    - Ubicado en la parte inferior derecha del diagrama.
    - Utilizado para medir la distancia de objetos delante del sistema.
    - Conexiones a pines digitales en Arduino para trigger y echo.
 
-   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HC-SR04.jpg" alt="HC-SR04 Ultrasonic Sensor" width="250"><br>
+   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HC-SR04.jpg" alt="HC-SR04 Ultrasonic Sensor" width="250" style="border: 1px solid #ddd;"><br>
 
 5. **Módulo Sensor IR (Infrarrojo)**:
    - Ubicado justo a la izquierda del sensor ultrasónico.
    - Utilizado para la detección de obstáculos cercanos.
    - Conexiones a pines digitales en Arduino.
 
-   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/sensor-infrarrojo.jpg" alt="Sensor IR" width="250"><br>
+   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/sensor-infrarrojo.jpg" alt="Sensor IR" width="250" style="border: 1px solid #ddd;"><br>
 
 6. **Módulo Cámara**:
    - Ubicado en la parte superior derecha del diagrama.
    - Conectado a la placa Arduino para la captura de imágenes.
    - Alimentación y comunicación conectadas a través de pines específicos.
 
-   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HuskyLens.png" alt="Módulo Cámara" width="250"><br>
+   <img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HuskyLens.png" alt="Módulo Cámara" width="250" style="border: 1px solid #ddd;"><br>
 
 ## Conexiones Detalladas
 
