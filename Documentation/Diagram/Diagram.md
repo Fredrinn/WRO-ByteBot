@@ -9,7 +9,7 @@
      - Powered by batteries.
      - Sensors and actuators connected to various pins.
 
-   ![Arduino Mega](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/Arduino-mega.jpg =250x)
+   ![Arduino Mega](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/Arduino-mega.jpg){:height="250px"}
 
 2. **L298N Motor Driver Module**:
    - Positioned to the left of the Arduino board.
@@ -18,34 +18,34 @@
      - Powered and controlled by Arduino.
      - Outputs to DC motor and servo.
 
-   ![L298N Motor Driver](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/l293d-arduino-motor-driver-shield.jpg =250x)
+   ![L298N Motor Driver](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/l293d-arduino-motor-driver-shield.jpg){:height="250px"}
 
 3. **18650 Batteries**:
    - Two batteries located on the left, connected in series to provide power.
    - Connection to motor driver and Arduino board.
 
-   ![18650 Batteries](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/18650-battery-3000mah.jpg =250x)
+   ![18650 Batteries](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/18650-battery-3000mah.jpg){:height="250px"}
 
 4. **HC-SR04 Ultrasonic Sensor**:
    - Located in the bottom right of the diagram.
    - Used for measuring distances to objects in front of the system.
    - Connections to Arduino digital pins for trigger and echo.
 
-   ![HC-SR04 Ultrasonic Sensor](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HC-SR04.jpg =250x)
+   ![HC-SR04 Ultrasonic Sensor](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HC-SR04.jpg){:height="250px"}
 
 5. **IR Sensor Module**:
    - Positioned just left of the ultrasonic sensor.
    - Used for detecting nearby obstacles.
    - Connections to Arduino digital pins.
 
-   ![IR Sensor](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/sensor-infrarrojo.jpg =250x)
+   ![IR Sensor](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/sensor-infrarrojo.jpg){:height="250px"}
 
 6. **Camera Module**:
    - Located in the top right of the diagram.
    - Connected to the Arduino board for image capture.
    - Power and communication connected through specific pins.
 
-   ![Camera Module](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HuskyLens.png =250x)
+   ![Camera Module](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HuskyLens.png){:height="250px"}
 
 ## Detailed Connections
 
