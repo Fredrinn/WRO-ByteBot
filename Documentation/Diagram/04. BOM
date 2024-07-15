@@ -1,0 +1,76 @@
+# Diagrama de Cableado y Lista de Materiales (BOM)
+
+## Diagrama de Cableado
+
+### Diagrama Físico
+
+El diagrama físico detalla la disposición física de los componentes y sus conexiones.
+
+<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Diagrama%20ByteBot.png" alt="Diagrama Físico" width="600">
+
+### Diagrama Eléctrico
+
+El diagrama eléctrico muestra las conexiones eléctricas detalladas entre los componentes.
+
+<img src="https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Diagrama%20electrico%20-%20Bytebots.png" alt="Diagrama Eléctrico" width="600">
+
+## Lista de Materiales (BOM)
+
+### Componentes Principales
+
+1. **Placa Arduino Mega 2560**
+   - Controlador principal del sistema.
+   - [Enlace al Producto](https://a.co/d/ckFzcAl)
+   - Cantidad: 1 unidad
+
+2. **Módulo Driver de Motores L298N**
+   - Controla motores de corriente continua y servomotores.
+   - [Enlace al Producto](https://a.co/d/bUoIC6j)
+   - Cantidad: 1 unidad
+
+3. **Baterías 18650**
+   - Fuente de alimentación principal.
+   - [Enlace al Producto](https://a.co/d/e2uqAm2m)
+   - Cantidad: 6 unidades
+
+4. **Sensor Ultrasónico HC-SR04**
+   - Utilizado para medir distancias.
+   - [Enlace al Producto](https://a.co/d/f0cdoob)
+   - Cantidad: 1 unidad
+
+5. **Módulo Sensor IR (Infrarrojo)**
+   - Detecta obstáculos cercanos.
+   - [Enlace al Producto](https://a.co/d/0LpqT3M)
+   - Cantidad: 1 unidad
+
+6. **Módulo Cámara**
+   - Captura imágenes para procesamiento visual.
+   - [Enlace al Producto](https://a.co/d/5XpMI4a)
+   - Cantidad: 1 unidad
+
+### Cables y Conectores
+
+1. **Cables Dupont**
+   - Para conexiones internas entre componentes.
+   - [Enlace al Producto](https://a.co/d/6Gw2NZg)
+   - Cantidad: 10 unidades
+
+2. **Cables de Alimentación**
+   - Para conectar las baterías y distribuir la energía.
+   - Cantidad: 1 juego
+
+### Otros Materiales
+
+1. **Kit Model A**
+   - [Enlace al Producto](https://a.co/d/6iml1Xq)
+   - Cantidad: 1 kit
+
+2. **Kit Model B**
+   - [Enlace al Producto](https://bc-robotics.com/shop/2wd-metal-chassis-kit-high-speed/)
+   - Cantidad: 1 kit
+
+## Instrucciones de Ensamblaje
+
+Detallar aquí las instrucciones paso a paso para ensamblar los componentes según el diagrama de cableado proporcionado y la lista de materiales.
+
+Este documento proporciona una guía completa para la construcción del sistema, asegurando la correcta integración y funcionamiento de cada componente.
