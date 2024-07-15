@@ -1,68 +1,80 @@
-# Technical Description of the System Diagram
+# Technical Description of System Diagram
 
 ## Main Components
 
 1. **Arduino Mega 2560 Board**:
-   - Located in the center of the diagram.
+   - Located at the center of the diagram.
    - Provides control and logic for the system.
-   - Main connections:
-     - Power supply from batteries.
+   - Key connections:
+     - Powered by batteries.
      - Sensors and actuators connected to various pins.
 
+   ![Arduino Mega](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/Arduino-mega.jpg =250x)
+
 2. **L298N Motor Driver Module**:
-   - Located to the left of the Arduino board.
-   - Controls the DC motor and the servo.
-   - Main connections:
-     - Power and control from Arduino.
+   - Positioned to the left of the Arduino board.
+   - Controls the DC motor and servo.
+   - Key connections:
+     - Powered and controlled by Arduino.
      - Outputs to DC motor and servo.
+
+   ![L298N Motor Driver](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/l293d-arduino-motor-driver-shield.jpg =250x)
 
 3. **18650 Batteries**:
    - Two batteries located on the left, connected in series to provide power.
-   - Connection to the motor driver and the Arduino board.
+   - Connection to motor driver and Arduino board.
+
+   ![18650 Batteries](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/18650-battery-3000mah.jpg =250x)
 
 4. **HC-SR04 Ultrasonic Sensor**:
-   - Located at the bottom right of the diagram.
-   - Used to measure the distance of objects in front of the system.
-   - Connections to digital pins on Arduino for trigger and echo.
+   - Located in the bottom right of the diagram.
+   - Used for measuring distances to objects in front of the system.
+   - Connections to Arduino digital pins for trigger and echo.
+
+   ![HC-SR04 Ultrasonic Sensor](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HC-SR04.jpg =250x)
 
 5. **IR Sensor Module**:
-   - Located just to the left of the ultrasonic sensor.
+   - Positioned just left of the ultrasonic sensor.
    - Used for detecting nearby obstacles.
-   - Connections to digital pins on Arduino.
+   - Connections to Arduino digital pins.
+
+   ![IR Sensor](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/sensor-infrarrojo.jpg =250x)
 
 6. **Camera Module**:
-   - Located at the top right of the diagram.
-   - Connected to the Arduino board for image capturing.
+   - Located in the top right of the diagram.
+   - Connected to the Arduino board for image capture.
    - Power and communication connected through specific pins.
+
+   ![Camera Module](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HuskyLens.png =250x)
 
 ## Detailed Connections
 
-- **Power Supply**:
-  - The 18650 batteries are connected in series and power both the L298N motor driver and the Arduino Mega board.
-  - Red wires indicate positive voltage (+) connections, and black wires indicate ground (-) connections.
+- **Power**:
+  - 18650 batteries are connected in series, providing power to both the L298N motor driver and the Arduino Mega board.
+  - Red cables indicate positive voltage connections (+), and black cables indicate ground connections (-).
 
 - **Motor Control**:
-  - The L298N module receives control signals from the Arduino board to manage the DC motor and the servo.
-  - The DC motor is connected to the outputs of the L298N, allowing speed and direction control.
+  - The L298N module receives control signals from the Arduino board to manage the DC motor and servo.
+  - The DC motor is connected to the outputs of the L298N for speed and direction control.
   - The servo motor is also connected to the L298N for position control.
 
 - **Sensors**:
-  - The HC-SR04 ultrasonic sensor has connections to the digital pins of the Arduino for the trigger and echo pins.
+  - The HC-SR04 ultrasonic sensor connects to Arduino digital pins for trigger and echo functionality.
   - The IR sensor module is connected to digital pins for obstacle detection.
 
 - **Communication and Additional Sensors**:
-  - The camera module is connected to the Arduino board through specific pins for communication and power.
+  - The camera module is connected to the Arduino board via specific pins for communication and power.
 
-## Technical Description of Operation
+## Operational Technical Description
 
-The system is designed to function as an autonomous mobile robot. The Arduino Mega board acts as the brain of the system, controlling the movement of the DC motor and the servo motor through the L298N module. The 18650 batteries provide the necessary power for the entire system.
+The system is designed to function as an autonomous mobile robot. The Arduino Mega board acts as the brain of the system, controlling the movement of the DC motor and servo motor through the L298N module. The 18650 batteries provide the necessary power for the entire system.
 
-The HC-SR04 ultrasonic sensor and the IR module are used for obstacle detection, allowing the Arduino to receive data about the proximity of objects and adjust the motor direction accordingly to avoid collisions.
+The HC-SR04 ultrasonic sensor and IR module are used for obstacle detection, allowing the Arduino to receive data about object proximity and adjust motor direction accordingly to avoid collisions.
 
-The camera adds vision capabilities to the system, enabling image or video capture that can be processed for navigation or object recognition.
+The camera module adds vision capabilities to the system, enabling the capture of images or videos that can be processed for navigation or object recognition.
 
-In summary, this system is designed as an autonomous mobile robot that can navigate its environment, avoid obstacles, and capture images, all controlled by an Arduino Mega 2560 board.
 ---
+
 # Descripción Técnica del Diagrama del Sistema
 
 ## Componentes Principales
@@ -74,6 +86,8 @@ In summary, this system is designed as an autonomous mobile robot that can navig
      - Alimentación desde baterías.
      - Sensores y actuadores conectados a varios pines.
 
+   ![Arduino Mega](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/Arduino-mega.jpg =250x)
+
 2. **Módulo Driver de Motores L298N**:
    - Ubicado a la izquierda de la placa Arduino.
    - Controla el motor de corriente continua (DC motor) y el servo.
@@ -81,24 +95,34 @@ In summary, this system is designed as an autonomous mobile robot that can navig
      - Alimentación y control desde Arduino.
      - Salidas a motor DC y servo.
 
+   ![L298N Motor Driver](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/l293d-arduino-motor-driver-shield.jpg =250x)
+
 3. **Baterías 18650**:
    - Dos baterías ubicadas a la izquierda, conectadas en serie para proporcionar alimentación.
    - Conexión al driver de motores y a la placa Arduino.
+
+   ![Baterías 18650](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/18650-battery-3000mah.jpg =250x)
 
 4. **Sensor Ultrasónico HC-SR04**:
    - Ubicado en la parte inferior derecha del diagrama.
    - Utilizado para medir la distancia de objetos delante del sistema.
    - Conexiones a pines digitales en Arduino para trigger y echo.
 
+   ![Sensor Ultrasónico HC-SR04](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HC-SR04.jpg =250x)
+
 5. **Módulo Sensor IR (Infrarrojo)**:
    - Ubicado justo a la izquierda del sensor ultrasónico.
    - Utilizado para la detección de obstáculos cercanos.
    - Conexiones a pines digitales en Arduino.
 
+   ![Sensor IR](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/sensor-infrarrojo.jpg =250x)
+
 6. **Módulo Cámara**:
    - Ubicado en la parte superior derecha del diagrama.
    - Conectado a la placa Arduino para la captura de imágenes.
    - Alimentación y comunicación conectadas a través de pines específicos.
+
+   ![Módulo Cámara](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/Component/HuskyLens.png =250x)
 
 ## Conexiones Detalladas
 
