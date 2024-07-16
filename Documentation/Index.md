@@ -11,7 +11,7 @@
 
 ## Guide Codes
 - [Vehile-video.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Photos/Vehicle's%20photos/Vehile-video.md)
-- [assembly.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Code/Guide%20codes/assembly.md)
+- [assembly.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/assembly.md)
 
 ## Libraries
 - [Library.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Libraries/Library.md)
