@@ -14,9 +14,9 @@
 - [assembly.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/assembly.md)
 
 ## Libraries
-- [Library.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Libraries/Library.md)
-- [Adafruit Motor Shield library](https://github.com/Fredrinn/WRO-ByteBot/tree/main/Documentation/Libraries/Adafruit_Motor_Shield_library)
-- [Huskylens](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Libraries/Huskylens)
+- [Library.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Code/Libraries/Library.md)
+- [Adafruit Motor Shield library](https://github.com/Fredrinn/WRO-ByteBot/tree/main/Documentation/Code/Libraries/Adafruit_Motor_Shield_library)
+- [Huskylens](https://github.com/Fredrinn/WRO-ByteBot/tree/main/Documentation/Code/Libraries/Huskylens)
 
 ## Diagrams
 ### Component Diagrams
