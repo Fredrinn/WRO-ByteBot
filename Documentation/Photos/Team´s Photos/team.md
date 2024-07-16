@@ -4,11 +4,15 @@
 
 Our team is comprised of three dedicated and skilled individuals, each bringing their unique expertise to the project:
 
-- **Anthony Vargas** (19 years old): Anthony is our lead programmer. He writes the code that powers our project and ensures everything runs smoothly. His deep understanding of programming languages and problem-solving skills make him an invaluable asset to the team.
-  
-- **Yonathan González** (19 years old): Yonathan is the assembler, the person responsible for putting together the Arduino components. His meticulous attention to detail and hands-on experience with hardware assembly ensure that all components are correctly connected and functioning.
+- **Anthony Vargas** (19 years old): Anthony serves as our assembler 🔧, responsible for assembling Arduino components. His meticulous attention to detail and practical experience in hardware assembly ensure that all components are correctly connected and functioning.
 
-- **Miguelangel Moreno** (17 years old): Miguelangel designs the connection diagrams. His ability to create clear and accurate schematics ensures that our wiring is both efficient and error-free. His creativity and technical skills make the complex simple and understandable.
+- **Yonathan González** (19 years old): Yonathan is our lead programmer 👨‍💻, responsible for writing the code that drives our project and ensures seamless functionality. His profound knowledge of programming languages and his problem-solving skills make him an invaluable asset to the team.
+
+- **Miguelangel Moreno** (17 years old): Miguelangel designs our connection diagrams 📊. His ability to create clear and precise schematics ensures that our wiring is efficient and error-free. His creativity and technical skills simplify complexity and enhance understanding.
+
+### LinkedIn Profiles:
+
+- [Yonathan González LinkedIn Profile](https://www.linkedin.com/in/yonathan-gonzalez/)
 
 ### Team Dynamics
 
@@ -34,11 +38,15 @@ Our team is comprised of three dedicated and skilled individuals, each bringing 
 
 Nuestro equipo está compuesto por tres individuos dedicados y hábiles, cada uno aportando su experiencia única al proyecto:
 
-- **Anthony Vargas** (19 años): Anthony es nuestro programador principal. Escribe el código que impulsa nuestro proyecto y asegura que todo funcione sin problemas. Su profundo conocimiento de los lenguajes de programación y sus habilidades para resolver problemas lo convierten en un activo invaluable para el equipo.
-  
-- **Yonathan González** (19 años): Yonathan es el ensamblador, la persona responsable de montar los componentes de Arduino. Su meticulosa atención al detalle y su experiencia práctica en el ensamblaje de hardware aseguran que todos los componentes estén correctamente conectados y funcionando.
+- **Anthony Vargas** (19 años): Anthony es nuestro ensamblador 🔧, responsable de ensamblar los componentes de Arduino. Su meticulosa atención al detalle y su experiencia práctica en el ensamblaje de hardware aseguran que todos los componentes estén correctamente conectados y funcionando.
 
-- **Miguelangel Moreno** (17 años): Miguelangel diseña los diagramas de conexión. Su capacidad para crear esquemas claros y precisos asegura que nuestro cableado sea tanto eficiente como libre de errores. Su creatividad y habilidades técnicas simplifican lo complejo y lo hacen comprensible.
+- **Yonathan González** (19 años): Yonathan es nuestro programador principal 👨‍💻, encargado de escribir el código que impulsa nuestro proyecto y garantiza su funcionalidad sin problemas. Su profundo conocimiento de los lenguajes de programación y sus habilidades para resolver problemas lo convierten en un activo invaluable para el equipo.
+
+- **Miguelangel Moreno** (17 años): Miguelangel diseña nuestros diagramas de conexión 📊. Su capacidad para crear esquemas claros y precisos asegura que nuestro cableado sea eficiente y libre de errores. Su creatividad y habilidades técnicas simplifican la complejidad y mejoran la comprensión.
+
+### Perfiles de LinkedIn:
+
+- [Perfil de LinkedIn de Yonathan González](https://www.linkedin.com/in/yonathan-gonzalez/)
 
 ### Dinámica del Equipo
 
