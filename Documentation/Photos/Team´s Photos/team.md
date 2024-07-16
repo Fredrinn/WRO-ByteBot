@@ -10,6 +10,8 @@ Our team is comprised of three dedicated and skilled individuals, each bringing 
 
 - **Miguelangel Moreno** (17 years old): Miguelangel designs the connection diagrams. His ability to create clear and accurate schematics ensures that our wiring is both efficient and error-free. His creativity and technical skills make the complex simple and understandable.
 
+![Team Photo](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Photos/Team%C2%B4s%20Photos/Team%20Photo.ARW)
+
 ### Team Dynamics
 
 - **Collaborative Decision-Making**: All decisions are made collectively, ensuring that each team member's perspective and expertise contribute to the final outcome. This approach fosters a sense of unity and shared responsibility.
@@ -39,6 +41,8 @@ Nuestro equipo está compuesto por tres individuos dedicados y hábiles, cada un
 - **Yonathan González** (19 años): Yonathan es el ensamblador, la persona responsable de montar los componentes de Arduino. Su meticulosa atención al detalle y su experiencia práctica en el ensamblaje de hardware aseguran que todos los componentes estén correctamente conectados y funcionando.
 
 - **Miguelangel Moreno** (17 años): Miguelangel diseña los diagramas de conexión. Su capacidad para crear esquemas claros y precisos asegura que nuestro cableado sea tanto eficiente como libre de errores. Su creatividad y habilidades técnicas simplifican lo complejo y lo hacen comprensible.
+
+![Team Photo](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Photos/Team%C2%B4s%20Photos/Team%20Photo.ARW)
 
 ### Dinámica del Equipo
 
