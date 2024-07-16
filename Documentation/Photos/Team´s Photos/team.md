@@ -24,11 +24,11 @@ Our team is comprised of three dedicated and skilled individuals, each bringing 
 
 ### Cool Aspects of Our Team
 
-- **Innovation**: We constantly explore new ideas and technologies to integrate into our project. Our passion for learning and innovation drives us to push the boundaries of what we can achieve.
+**Innovation** 🚀: We constantly explore new ideas and technologies to integrate into our project. Our passion for learning and innovation drives us to push the boundaries of what we can achieve.
 
-- **Commitment to Quality**: We are committed to delivering a high-quality product. Our attention to detail and thorough testing processes ensure that our project not only works but excels in its performance.
+**Commitment to Quality** ⭐: We are committed to delivering a high-quality product. Our attention to detail and thorough testing processes ensure that our project not only works but excels in its performance.
 
-- **Team Spirit**: Our strong team spirit and mutual respect for each other's skills and contributions make working together both productive and enjoyable. We believe that a positive team dynamic is key to overcoming challenges and achieving our goals.
+**Team Spirit** 👥: Our strong team spirit and mutual respect for each other's skills and contributions make working together both productive and enjoyable. We believe that a positive team dynamic is key to overcoming challenges and achieving our goals.
 
 ---
 
@@ -58,4 +58,8 @@ Nuestro equipo está compuesto por tres individuos dedicados y hábiles, cada un
 
 ### Aspectos Geniales de Nuestro Equipo
 
-- **Innovación**: Constantemente exploramos nuevas ideas y tecnologías para integrar en nuestro proyecto. Nuestra pasión por el aprendizaje y la innovación nos impulsa a superar los límites de lo que podemos lograr.
+**Innovación** 🚀: Constantemente exploramos nuevas ideas y tecnologías para integrar en nuestro proyecto. Nuestra pasión por el aprendizaje y la innovación nos impulsa a ampliar los límites de lo que podemos lograr.
+
+**Compromiso con la Calidad** ⭐: Estamos comprometidos con entregar un producto de alta calidad. Nuestra atención al detalle y nuestros procesos exhaustivos de prueba aseguran que nuestro proyecto no solo funcione, sino que sobresalga en su rendimiento.
+
+**Espíritu de Equipo** 👥: Nuestro fuerte espíritu de equipo y el respeto mutuo por las habilidades y contribuciones de cada miembro hacen que trabajar juntos sea tanto productivo como placentero. Creemos que una dinámica de equipo positiva es clave para superar desafíos y alcanzar nuestros objetivos.
