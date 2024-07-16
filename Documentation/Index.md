@@ -10,7 +10,7 @@
 - [code.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Code/code.md)
 
 ## Guide Codes
-- [Vehile-video.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Code/Guide%20codes/Vehile-video.md)
+- [Vehile-video.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Photos/Vehicle's%20photos/Vehile-video.md)
 - [assembly.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Code/Guide%20codes/assembly.md)
 
 ## Libraries
