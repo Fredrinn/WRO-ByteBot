@@ -43,9 +43,11 @@
 - [Assemble Model B.pdf](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Assemble%20Model%20B.pdf)
 - [Model A.png](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20A.png)
 - [Model B.jpg](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/Model%20B.jpg)
+- [assembly.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Robot-assembly/assembly.md)
 
 ## Additional Resources
 - [01. Diagram Description.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/01.%20Diagram%20Description.md)
 - [02. Energy management.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/02.%20Energy%20management.md)
 - [03. Sensor management.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/03.%20Sensor%20management.md)
 - [04. BOM.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/04.%20BOM.md)
+- [05. Mobility Management - Motors.md](https://github.com/Fredrinn/WRO-ByteBot/blob/main/Documentation/Diagram/05.%20Mobility%20Management%20-%20Motors.md)
