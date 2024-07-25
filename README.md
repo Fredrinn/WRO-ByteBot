@@ -1,9 +1,9 @@
 # WRO-Future Engineers
 
-## ByteBot  
+## ByteBots
 ### Robotic Solution - ByteBot  
 
-We are Team ByteBot, consisting of Anthony Vargas, Miguelangel Moreno, and Yonathan González. We have developed an autonomous vehicle model to compete in the 2024 season of WRO Future Engineers. This repository houses a wide range of engineering resources related to our autonomous vehicle, designed to tackle challenging speed and skill tests.
+We are Team ByteBots, consisting of Anthony Vargas, Miguelangel Moreno, and Yonathan González. We have developed an autonomous vehicle model to compete in the 2024 season of WRO Future Engineers. This repository houses a wide range of engineering resources related to our autonomous vehicle, designed to tackle challenging speed and skill tests.
 
 ## Contents
 
