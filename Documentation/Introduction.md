@@ -6,8 +6,102 @@ This repository contains all the documentation, source code, schematics, and res
 
 ## Team Members
 
-- Anthony Vargas 🛠️
-- Yonathan González 👨‍💻
+<!-- Anthony-->
+
+<details>
+<summary>
+Anthony Vargas 🛠️
+</summary>
+
+<div style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; margin-bottom: 10px;">
+    <h3>About Me</h3>
+    <p>
+        Soy un apasionado desarrollador con experiencia en diversas tecnologías y herramientas. Me encanta aprender y aplicar nuevas técnicas para resolver problemas y construir soluciones innovadoras.
+    </p>
+</div>
+
+<h3>Languages</h3>
+<p>
+    <div align="left">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CPP.svg" alt="C++" width="50" height="50" style="margin: 0 10px;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Python-Dark.svg" alt="Python" width="50" height="50" style="margin: 0 10px;">
+    </div>
+</p>
+
+<h3>Platforms</h3>
+<p>
+    <div style="display: flex; align-items: center; flex-wrap: wrap;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Arduino.svg" alt="Arduino" width="50" height="50" style="margin: 5px;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Linux-Dark.svg" alt="Linux" width="50" height="50" style="margin: 5px;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Ubuntu-Dark.svg" alt="Ubuntu" width="50" height="50" style="margin: 5px;">
+    </div>
+</p>
+
+<h3>Contact</h3>
+<p>
+    <a href="https://www.instagram.com/antthonyyyy_999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank">
+        <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Anthony Vargas Instagram" height="30" width="40" />
+    </a>
+</p>
+
+<hr width="36%" >
+ 
+</details>
+
+<!-- Yonathan -->
+  
+<details>
+<summary>
+Yonathan González 👨‍💻
+</summary>
+
+<div style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; margin-bottom: 10px;">
+    <h3>About Me</h3>
+    <p>
+        Soy un apasionado desarrollador con experiencia en diversas tecnologías y herramientas. Me encanta aprender y aplicar nuevas técnicas para resolver problemas y construir soluciones innovadoras.
+    </p>
+</div>
+
+<h3>Languages</h3>
+<p>
+    <div align="left">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CPP.svg" alt="C++" width="50" height="50" style="margin: 0 10px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Dart-Dark.svg" alt="Dart" width="50" height="50" style="margin: 0 10px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/HTML.svg" alt="HTML" width="50" height="50" style="margin: 0 10px;">
+</div>
+
+</p>
+
+<h3>Platforms</h3>
+<p>
+    <div style="display: flex; align-items: center; flex-wrap: wrap;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Arduino.svg" alt="Arduino" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Firebase-Dark.svg" alt="Firebase" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Flutter-Dark.svg" alt="Flutter" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Github-Dark.svg" alt="Github" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/GCP-Dark.svg" alt="GCP" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/VSCode-Dark.svg" alt="VSCode" width="50" height="50" style="margin: 5px;">
+</div>
+
+</p>
+
+<h3>Contact</h3>
+<p>
+    <a href="https://www.linkedin.com/in/yonathan-gonzalez/" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Yonathan Gonzalez LinkedIn" height="30" width="40" />
+</a>
+<a href="https://www.instagram.com/yonthan_gonzalez/" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Yonathan Gonzalez Instagram" height="30" width="40" />
+</a>
+
+</p>
+
+ <hr width="36%" >
+ 
+</details>
+
+ <!-- Miguelangel -->
+ 
 - Miguelangel Moreno 📊
   
 👩‍💼 Coordinator: Vianca Cuevas
@@ -26,8 +120,102 @@ Este repositorio contiene toda la documentación, código fuente, esquemas y rec
 
 ## Miembros del Equipo
 
-- Anthony Vargas 🛠️
-- Yonathan González 👨‍💻
+<!-- Anthony-->
+
+<details>
+<summary>
+Anthony Vargas 🛠️
+</summary>
+
+<div style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; margin-bottom: 10px;">
+    <h3>About Me</h3>
+    <p>
+        Soy un apasionado desarrollador con experiencia en diversas tecnologías y herramientas. Me encanta aprender y aplicar nuevas técnicas para resolver problemas y construir soluciones innovadoras.
+    </p>
+</div>
+
+<h3>Languages</h3>
+<p>
+    <div align="left">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CPP.svg" alt="C++" width="50" height="50" style="margin: 0 10px;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Python-Dark.svg" alt="Python" width="50" height="50" style="margin: 0 10px;">
+    </div>
+</p>
+
+<h3>Platforms</h3>
+<p>
+    <div style="display: flex; align-items: center; flex-wrap: wrap;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Arduino.svg" alt="Arduino" width="50" height="50" style="margin: 5px;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Linux-Dark.svg" alt="Linux" width="50" height="50" style="margin: 5px;">
+        <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Ubuntu-Dark.svg" alt="Ubuntu" width="50" height="50" style="margin: 5px;">
+    </div>
+</p>
+
+<h3>Contact</h3>
+<p>
+    <a href="https://www.instagram.com/antthonyyyy_999?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank">
+        <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Anthony Vargas Instagram" height="30" width="40" />
+    </a>
+</p>
+
+<hr width="36%" >
+ 
+</details>
+
+<!-- Yonathan -->
+  
+<details>
+<summary>
+Yonathan González 👨‍💻
+</summary>
+
+<div style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; margin-bottom: 10px;">
+    <h3>About Me</h3>
+    <p>
+        Soy un apasionado desarrollador con experiencia en diversas tecnologías y herramientas. Me encanta aprender y aplicar nuevas técnicas para resolver problemas y construir soluciones innovadoras.
+    </p>
+</div>
+
+<h3>Languages</h3>
+<p>
+    <div align="left">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CPP.svg" alt="C++" width="50" height="50" style="margin: 0 10px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Dart-Dark.svg" alt="Dart" width="50" height="50" style="margin: 0 10px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/HTML.svg" alt="HTML" width="50" height="50" style="margin: 0 10px;">
+</div>
+
+</p>
+
+<h3>Platforms</h3>
+<p>
+    <div style="display: flex; align-items: center; flex-wrap: wrap;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Arduino.svg" alt="Arduino" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Firebase-Dark.svg" alt="Firebase" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Flutter-Dark.svg" alt="Flutter" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Github-Dark.svg" alt="Github" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/GCP-Dark.svg" alt="GCP" width="50" height="50" style="margin: 5px;">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/VSCode-Dark.svg" alt="VSCode" width="50" height="50" style="margin: 5px;">
+</div>
+
+</p>
+
+<h3>Contact</h3>
+<p>
+    <a href="https://www.linkedin.com/in/yonathan-gonzalez/" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Yonathan Gonzalez LinkedIn" height="30" width="40" />
+</a>
+<a href="https://www.instagram.com/yonthan_gonzalez/" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Yonathan Gonzalez Instagram" height="30" width="40" />
+</a>
+
+</p>
+
+ <hr width="36%" >
+ 
+</details>
+
+ <!-- Miguelangel -->
+ 
 - Miguelangel Moreno 📊
   
 👩‍💼 Coordinadora: Vianca Cuevas
