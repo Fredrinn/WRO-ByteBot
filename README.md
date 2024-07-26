@@ -67,3 +67,9 @@ Our action-reaction principle is based on the idea that all vehicle components m
    3.2. **Obstacle Detection and Response**: If the prototype detects an obstacle, indicating Round 2, a second reaction occurs. Since Round 2 presents obstacles, it is necessary to reduce the motor speed to avoid errors due to excessive speed.
 
       3.2.1. **Obstacle Monitoring**: The next action is to monitor the color of the obstacles. This way, we can predefine the vehicle's reaction, which consists of reducing the speed of the DC motors and turning the servomotor in the appropriate direction to provide optimal direction to the robot. This approach allows us to navigate safely and efficiently around obstacles.
+
+<div align="center">
+
+### Made with ❤️ by Bytebots Team
+
+</div>
