@@ -1,35 +1,15 @@
-# Bytebot Project Documentation
+# Documentación del Proyecto Bytebots
 
-## Description
+## <img src="https://raw.githubusercontent.com/0xAbdulKhalid/0xAbdulKhalid/main/assets/mdImages/about_me.gif" alt="C++" width="45" height="45"> Tecnologías Utilizadas
 
-This project utilizes a servo motor and a HuskyLens AI vision sensor to detect colors and move the servo based on the detected color IDs. The project involves the following components:
+Este proyecto está desarrollado utilizando las siguientes tecnologías y plataformas:
 
-- **Servo Motor**: Controlled using the `Servo.h` library to move to specified positions.
-- **HuskyLens**: An AI vision sensor that uses the `HUSKYLENS.h` library for color detection and recognition.
-- **SoftwareSerial**: Used to communicate with the HuskyLens via serial communication.
+<span>
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/CPP.svg" alt="C++" width="45" height="45">
+    <img src="https://github.com/tandpfun/skill-icons/blob/main/icons/Arduino.svg" alt="Arduino" width="45" height="45">
+</span>
 
-## Functionality
-
-The system operates as follows:
-
-1. **Initialization**: 
-   - The servo motor is attached to a specified pin.
-   - Serial communication is initialized for both standard serial and software serial (for HuskyLens).
-   - The HuskyLens is initialized and set to use the color recognition algorithm.
-
-2. **Color Detection and Servo Control**:
-   - In the main loop, the system requests data from the HuskyLens.
-   - If the HuskyLens detects a learned color, it reads the result.
-   - If the detected color ID is `1`, the servo is moved to the left position.
-   - The system then waits for the color ID `2` to be detected to move the servo to the center position.
-
-3. **Servo Movement and Center Verification**:
-   - The `moverServo` function is used to move the servo to a specified position and verify if it is centered.
-   - The `verificarCentro` function checks if the servo is within the centered position range and prints the status to the serial monitor.
-
----
-
-# Documentación del Proyecto bytebot
+![Descripción de la imagen](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 ## Descripción
 
@@ -39,7 +19,7 @@ Este proyecto utiliza un motor servo y un sensor de visión AI HuskyLens para de
 - **HuskyLens**: Un sensor de visión AI que utiliza la biblioteca `HUSKYLENS.h` para la detección y reconocimiento de colores.
 - **SoftwareSerial**: Utilizado para comunicar con el HuskyLens mediante comunicación serial.
 
-## Funcionalidad
+## <img src="https://camo.githubusercontent.com/94b33bd991f6c3135af747bdf27361be43e797c0fce678b62ed5aef57e9d8bd7/68747470733a2f2f6d65646961322e67697068792e636f6d2f6d656469612f51737347456d706b79454f684243623765312f67697068792e6769663f6369643d656366303565343761306e336769316266716e74716d6f62386739616964316f796a327772336473336d67373030626c267269643d67697068792e676966" alt="C++" width="20" height="20"> Funcionalidad
 
 El sistema opera de la siguiente manera:
 
