@@ -9,159 +9,93 @@
    Authors: Anthony Vargas - Yonathan Gonzalez.
 */
 
-//Libraries are included - Se incluyen las liberías.
-  #include <HUSKYLENS.h>                // Library for interacting with the HUSKYLENS sensor - Librería para interactuar con el sensor HUSKYLENS
-  #include <HuskyLensProtocolCore.h>    //  Core communication protocol for HUSKYLENS - Núcleo del protocolo de comunicación para HUSKYLENS
-  #include <Wire.h>                     // Library for I2C communication - Librería para comunicación I2C
-  #include <Servo.h>                    // Library for controlling servomotors - Librería para controlar servomotores
-  #include <AFMotor.h>                  // Library for controlling motors with Adafruit Motor Shield -  Librería para controlar motores con Adafruit Motor Shield
-//-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+// Se incluyen las librerías necesarias para el control de motores, servos y la comunicación I2C
+#include <Wire.h>                     // Librería para comunicación I2C
+#include <Servo.h>                    // Librería para controlar servomotores
+#include <AFMotor.h>                  // Librería para controlar motores con Adafruit Motor Shield
 
-//The different objects and variables are created - Se crean los diferentes objetos y variables.
+// Se definen las constantes para los pines del servo y el sensor ultrasónico
+const int pinServo = 9;               // Pin donde está conectado el servo
+const int posCentro = 80;             // Posición central del servo, usada como referencia para avanzar en línea recta
+const int posGiro = 100;              // Posición del servo para realizar giros, moviendo la dirección del robot
+const int posRetroceso = 50;          // Posición del servo para retroceder, girando en dirección contraria
+const int triggerPin = 17;            // Pin Trigger del sensor ultrasónico, envía pulsos ultrasónicos
+const int echoPin = 18;               // Pin Echo del sensor ultrasónico, recibe los pulsos reflejados
 
-  HUSKYLENS huskylens;            // HUSKYLENS object for interacting with the sensor - Objeto HUSKYLENS para interactuar con el sensor.
-  Servo servo;                    // Servo object for controlling a servo motor - Objeto Servo para controlar un servo motor.
+// Se definen las variables para el control de velocidad del motor y las distancias para maniobras
+int velocidadMotor = 170;             // Velocidad inicial del motor, valor base para empezar a moverse
+const int velocidadIncremento = 10;   // Incremento de la velocidad del motor en cada ajuste
+const int velocidadMaxima = 200;      // Velocidad máxima permitida para el motor, límite superior de velocidad
+const int velocidadMinima = 150;      // Velocidad mínima permitida para el motor, límite inferior de velocidad
+const int distanciaUmbral = 70;       // Distancia en cm para hacer el giro, evita colisiones
+const int distanciaRetroceso = 35;    // Distancia en cm para retroceder, activa la maniobra de retroceso
 
-  AF_DCMotor motor1(1);           // Motor connected to port M1 - Motor conectado al puerto M1.
-
-  const int trigPin = 9;
-  const int echoPin = 10;
-
-//The different positions of the servomotor are declared - Se declaran las diferentes posiciones del servomotor.
-
-  const int pinServo = 9;         // Pin donde está conectado el servo - Pin where the servo is connected
-  const int posCentro = 80;       // Posición central del servo - Center position of the servo
-  const int posDerecha = 50;      // Posición a la derecha del servo - Position to the right of the servo
-  const int posIzquierda = 110;   // Posición a la izquierda del servo - Position to the left of the servo
-
-//Various variables are defined to store data - Se definen varias variables para almacenar datos.
-  int ultrasonicInitialValue = 0;
-  int ultimaPosicionServo = posCentro; // Guarda la última posición del servo
-  int contadorGiros = 0; // Contador de giros
-
-//-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-// Initializes the void Setup to configure the initial parameters. - Se inicia el void Setup para configurar los parámetros iniciales.
+// Se crean los objetos para controlar el motor y el servo
+AF_DCMotor motor1(1);                 // Motor conectado al puerto M1 del Adafruit Motor Shield
+Servo servo;                          // Objeto Servo para controlar el servomotor
 
 void setup() {
-    Serial.begin(115200);         // Initialize the communication series - Inicializa la comunicación serie
-    Wire.begin();                 // Initializes I2C communication - Inicializa la comunicación I2C
+    Serial.begin(115200);             // Inicializa la comunicación serie a 115200 baudios para depuración
+    Wire.begin();                     // Inicializa la comunicación I2C, necesaria para el sensor HUSKYLENS y otros dispositivos I2C
 
-    servo.attach(pinServo);       // Conecta el servo al pin 9
-    servo.write(posCentro);       // Inicializa el servo en la posición central
+    servo.attach(pinServo);           // Conecta el servo al pin definido anteriormente
+    servo.write(posCentro);           // Inicializa el servo en la posición central para avanzar en línea recta
+    motor1.setSpeed(velocidadMotor);  // Establece la velocidad inicial del motor, utilizando el valor predefinido
 
-    motor1.setSpeed(255); // Sets the motor speed to 255 (maximum value) - Establece la velocidad del motor a 255 (valor máximo)
-    
-    pinMode(trigPin, OUTPUT);
-    pinMode(echoPin, INPUT);
-
-// Intenta inicializar HuskyLens utilizando la comunicación I2C.
-    while (!huskylens.begin(Wire)) {
-      Serial.println(F("¡Fallo al iniciar HuskyLens!"));
-      delay(500); // Wait 0.5 second before trying again - Espera 0.5 segundo antes de intentar nuevamente
-    }
-    Serial.println(F("¡HuskyLens inicializado!"));         // HuskyLens initialized successfully - ¡HuskyLens inicializado correctamente!
-    huskylens.writeAlgorithm(ALGORITHM_COLOR_RECOGNITION); // Selects the color recognition algorithm - Selecciona el algoritmo de reconocimiento de colores
+    pinMode(triggerPin, OUTPUT);      // Configura el pin del trigger como salida para enviar pulsos ultrasónicos
+    pinMode(echoPin, INPUT);          // Configura el pin del echo como entrada para recibir los pulsos reflejados
 }
 
-//-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 void loop() {
-    if (!huskylens.request()) {
-        Serial.println(F("Fallo al solicitar datos de HUSKYLENS, ¡verifique la conexión!"));
-    } else if (!huskylens.available()) {
-        servo.write(posCentro); // No hay datos disponibles, mantener en posición central
-        ultimaPosicionServo = posCentro; // Actualiza la última posición del servo
-        contadorGiros = 0; // Reinicia el contador de giros
+    long duracion, distancia;         // Variables para almacenar la duración del pulso y la distancia calculada
+
+    // Realiza una medición con el sensor ultrasónico, enviando un pulso y midiendo el tiempo de retorno
+    digitalWrite(triggerPin, LOW);    // Asegura que el trigger esté en bajo antes de enviar el pulso
+    delayMicroseconds(2);             // Espera 2 microsegundos para estabilizar la señal
+    digitalWrite(triggerPin, HIGH);   // Activa el trigger para enviar un pulso ultrasónico
+    delayMicroseconds(10);            // Mantiene el pulso durante 10 microsegundos
+    digitalWrite(triggerPin, LOW);    // Desactiva el trigger, finalizando el pulso
+
+    duracion = pulseIn(echoPin, HIGH); // Mide el tiempo en microsegundos que tarda en recibir el eco del pulso
+    distancia = (duracion / 2) / 29.1; // Convierte la duración del pulso en distancia en centímetros
+
+    // Muestra la distancia medida en el monitor serial para fines de depuración
+    Serial.print("Distancia: ");
+    Serial.print(distancia);
+    Serial.println(" cm");
+
+    // Ajusta la velocidad del motor en función de la distancia medida
+    if (distancia <= distanciaRetroceso) {
+        // Si el objeto está muy cerca, a 35 cm o menos, activa la maniobra de retroceso
+        servo.write(posRetroceso);    // Mueve el servo a la posición de retroceso para cambiar de dirección
+        motor1.setSpeed(velocidadMotor); // Mantiene la velocidad actual del motor
+        motor1.run(BACKWARD);         // Invierte la dirección del motor para retroceder
+        delay(1000);                  // Mantiene el retroceso durante 1 segundo
+        motor1.run(RELEASE);          // Detiene el motor después del retroceso
+        servo.write(posCentro);       // Regresa el servo a la posición central para preparar el avance
+        delay(500);                   // Espera medio segundo para estabilizar el servo antes de continuar
+        return;                       // Finaliza el ciclo actual para evitar avanzar de inmediato
+    } else if (distancia < distanciaUmbral) {
+        // Si el objeto está dentro del umbral de 70 cm pero no tan cerca como para retroceder
+        velocidadMotor -= velocidadIncremento; // Disminuye la velocidad del motor para evitar colisiones
+        if (velocidadMotor < velocidadMinima) velocidadMotor = velocidadMinima; // Limita la velocidad mínima
+        motor1.setSpeed(velocidadMotor); // Actualiza la velocidad del motor con el nuevo valor reducido
     } else {
-        while (huskylens.available()) {
-            HUSKYLENSResult result = huskylens.read();
-            if (result.command == COMMAND_RETURN_BLOCK) {
-                if (result.ID == 1 || result.ID == 3) {
-                    servo.write(posDerecha); // Detecta ID 1 o ID 3, mueve a la posición derecha
-                    ultimaPosicionServo = posDerecha;
-                    contadorGiros = 13; // Establece el contador de giros a 13
-                    delay(2500); // Espera 2500 ms
-                } else if ((result.ID == 2 || result.ID == 4) && contadorGiros <= 0) {
-                    servo.write(posIzquierda); // Detecta ID 2 o ID 4, mueve a la posición izquierda solo si no se detectó ID 1 o ID 3 primero
-                    ultimaPosicionServo = posIzquierda;
-                    delay(2500); // Espera 2500 ms
-                }
-            }
-        }
-    }
-    servo.write(ultimaPosicionServo); // Mantener la última posición del servo
-    motor1.run(FORWARD); // Continúa avanzando
-
-    if (contadorGiros > 0) {
-        contadorGiros--; // Disminuye el contador de giros en cada ciclo
+        // Si no hay objetos cercanos, aumenta la velocidad del motor para avanzar más rápido
+        velocidadMotor += velocidadIncremento; // Incrementa la velocidad del motor para aprovechar la distancia libre
+        if (velocidadMotor > velocidadMaxima) velocidadMotor = velocidadMaxima; // Limita la velocidad máxima
+        motor1.setSpeed(velocidadMotor); // Actualiza la velocidad del motor con el nuevo valor incrementado
     }
 
-    delay(100); // Espera un momento antes de la próxima solicitud
-}
+    motor1.run(FORWARD);              // Avanza el motor hacia adelante con la velocidad ajustada
 
-//-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-void printResult(HUSKYLENSResult result) {
-    if (result.command == COMMAND_RETURN_BLOCK) {
-        Serial.println(String() + F("Bloque: xCentro=") + result.xCenter + F(", yCentro=") + result.yCenter + F(", ancho=") + result.width + F(", alto=") + result.height + F(", ID=") + result.ID);
-    } else if (result.command == COMMAND_RETURN_ARROW) {
-        Serial.println(String() + F("Flecha: xOrigen=") + result.xOrigin + F(", yOrigen=") + result.yOrigin + F(", xDestino=") + result.xTarget + F(", yDestino=") + result.yTarget + F(", ID=") + result.ID);
-    } else {
-        Serial.println("¡Objeto desconocido!");
+    // Realiza el giro si la distancia medida es menor que el umbral definido
+    if (distancia < distanciaUmbral) {
+        servo.write(posGiro);         // Gira el servo a la posición de giro para cambiar la dirección del robot
+        delay(2000);                  // Mantiene el giro durante 2 segundos para completar la maniobra
+        servo.write(posCentro);       // Regresa el servo a la posición central para continuar avanzando recto
+        delay(1000);                  // Espera 1 segundo para estabilizar el servo después del giro
     }
-}
 
-void ultrasonicBegin (){
-  long duration1, duration2, duration3;
-  float distance, averageDistance = 0;
-  int validReadings = 0;
-  
-  // Primer pulso
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  duration1 = pulseIn(echoPin, HIGH, 30); // Máximo de 30ms
-  
-  // Segundo pulso
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  duration2 = pulseIn(echoPin, HIGH, 30); // Máximo de 30ms
-  
-  // Tercer pulso
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-  duration3 = pulseIn(echoPin, HIGH, 30); // Máximo de 30ms
-  
-  // Calcular la distancia promedio omitiendo lecturas inválidas (0)
-  if (duration1 > 0) {
-    distance += duration1 * 0.034 / 2;
-    validReadings++;
-  }
-  if (duration2 > 0) {
-    distance += duration2 * 0.034 / 2;
-    validReadings++;
-  }
-  if (duration3 > 0) {
-    distance += duration3 * 0.034 / 2;
-    validReadings++;
-  }
-  
-  if (validReadings > 0) {
-    averageDistance = distance / validReadings;
-  } else {
-    Serial.println("No se detectaron lecturas válidas.");
-  }
-  
-  Serial.print("Distancia promedio: ");
-  Serial.print(averageDistance);
-  Serial.println(" cm");
-  
-  delay(150);  // Espera 500 ms antes de la siguiente medición
+    delay(100);                       // Espera un corto tiempo antes de realizar la siguiente medición de distancia
 }
