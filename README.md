@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=7B68EE&height=120&section=header"/>
+
 # WRO-Future Engineers
 
 ## ByteBots
@@ -5,24 +7,24 @@
 
 We are Team ByteBots, consisting of Anthony Vargas, Miguelangel Moreno, and Yonathan González. We have developed an autonomous vehicle model to compete in the 2024 season of WRO Future Engineers. This repository houses a wide range of engineering resources related to our autonomous vehicle, designed to tackle challenging speed and skill tests.
 
-## Contents
+## 📝 Contents
 
-* **Team Photo**  
+* **📸👥 Team Photo**  
   In this section, we present an official photo of our talented ByteBot team. This image captures the spirit of collaboration and dedication that has led us to develop a high-performance autonomous vehicle for the WRO Future Engineers competition. Meet the faces behind the project and discover the collective effort we've invested to achieve our goals.
 
-* **Diagram**  
+* **📊📈 Diagram**  
   Here, we present a comprehensive diagram showing the internal workings and structure of our autonomous robot. This diagram provides a clear understanding of how we designed and assembled each essential part of our vehicle, including the sensor system, control unit, actuators, and the overall layout of the components.
 
-* **Prototype Images**  
+* **🛠️🔧 Prototype Images**  
   In this section, you'll find various .pdf files with detailed photos of our robot. You can explore its innovative design, components, and key features up close. These images will allow you to appreciate the quality and precision with which we've built our autonomous vehicle for the WRO Future Engineers competition.
 
-* **Programming**  
+* **💻👩‍💻 Programming**  
   Here you will find the C++ code we developed for the operation of our autonomous robot. This programming file provides detailed information about the navigation algorithms, obstacle detection, and decision-making capabilities of our vehicle. We will be updating the code versions as we progress in the development and optimization of the robot.
 
-* **Robot Video**  
+* **🤖🎥 Robot Video**  
   In this section, we provide a link to a video located in the vehicle photo folder where you can see our robot in action.
 
-## Introduction
+## 📚 Introduction
 
 To optimize the design, the solution was modeled in virtual simulations and used a minimal number of components, allowing for space savings. Significant effort was devoted to optimizing the robot's size and reducing material consumption.
 
@@ -34,7 +36,7 @@ The components used in our prototype are as follows:
 - **Servomotor**: Servomotor
 - **Other components**: 18650 Batteries, LN298 Module, Jumpers, LEDs
 
-### Operation
+### ⚙️💡 Operation
 
 The journey of the robotic prototype begins with the use of HuskyLens, which provides precise data on the distance between the robot and surrounding objects. Once this data is obtained, the robot enters a second phase of conditional processing that allows it to determine its precise location on the game track.
 
@@ -42,17 +44,17 @@ The prototype can take two distinct approaches to act accordingly. On one hand, 
 
 On the other hand, the prototype can also employ a more dynamic and adaptive approach. Using sensor information, the robot can continuously evaluate its surroundings and make real-time decisions to avoid obstacles and reach its goal in the most efficient way possible. This involves a greater capacity for reaction and adaptation to changing game conditions.
 
-#### First Option
+####  🚀✨ First Option
 
 The robotic prototype extensively validates HuskyLens data to determine its exact position on the game track. It uses this information to follow a predefined and optimized path that ensures a smooth, fast, and precise journey. The robot maintains a constant and safe pace using the distance data recorded by HuskyLens, avoiding unnecessary stops to check for obstacles in its path.
 
-#### Second Option
+#### 🧭✨ Second Option
 
 When the ByteBot system detects obstacles through HuskyLens, a conditional logic is activated in Program 2. This program encodes variables and actions for the prototype to make dynamic decisions and adjust its trajectory to avoid obstacles. If an obstacle is detected, the prototype efficiently turns left or right.
 
 The prototype uses HuskyLens data to identify the location and nature of obstacles, determining the optimal direction to avoid them and encoding the necessary instructions for the corresponding turn. This real-time response and adaptation capability is crucial for the prototype's success.
 
-### Action-Reaction
+###  🤖⚙️ Action-Reaction
 
 Our action-reaction principle is based on the idea that all vehicle components must work in perfect harmony to achieve optimal performance. The components and actions necessary to generate a reaction based on the received data are as follows:
 
